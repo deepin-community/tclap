@@ -1,0 +1,17 @@
+Description: Remove one layer
+ Remove one backreference to sourceforge in html docs
+Author: Dirk Eddelbuettel <edd@debian.org>
+Last-Update: 2021-01-08
+
+--- tclap-1.2.3.orig/docs/index.html
++++ tclap-1.2.3/docs/index.html
+@@ -32,9 +32,6 @@
+ <td align="left">
+ <h1>Templatized C++ Command Line Parser Library</h1>
+ </td>
+-<td align="right">
+-<a href="http://sourceforge.net/projects/tclap"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=76645&amp;type=15" width="150" height="40" alt="Get Templatized C++ Command Line Parser at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
+-</td>
+ </tr>
+ </table>
+ <div class="links">

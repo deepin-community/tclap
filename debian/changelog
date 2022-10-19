@@ -1,0 +1,88 @@
+tclap (1.2.5-1) unstable; urgency=medium
+
+  * New upstream release
+
+  * debian/control: Set Standards-Version: to current version 
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Fri, 05 Nov 2021 12:39:48 -0500
+
+tclap (1.2.4-3) unstable; urgency=medium
+
+  * Simple rebuild for unstable following Debian 11 release
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Tue, 17 Aug 2021 14:12:28 -0500
+
+tclap (1.2.4-2) experimental; urgency=medium
+
+  * debian/rules: Remove Makefile(s) to help reproducible builds (with
+    thanks to Vagrant Cascadian) 			(Closes: #989963)
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Wed, 16 Jun 2021 16:40:41 -0500
+
+tclap (1.2.4-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Mon, 22 Mar 2021 07:46:50 -0500
+
+tclap (1.2.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+  * debian/control: Remove Build-Depends: on autotools-dev
+
+  * debian/control: Switch to virtual debhelper-compat (= 11)
+  * debian/compat: Removed
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Fri, 08 Jan 2021 15:42:08 -0600
+
+tclap (1.2.2-1) unstable; urgency=medium
+
+  * New upstream release
+  
+  * debian/control: Update Standards-Version: to current version
+  * debian/compat: Increased to level 9
+
+  * docs/index.html: Remove one top-level entry with sflogo backreference
+    because lintian flagged an error on privacy breach
+    
+ -- Dirk Eddelbuettel <edd@debian.org>  Sat, 20 Jan 2018 16:13:27 -0600
+
+tclap (1.2.1-1) unstable; urgency=low
+
+  * New upstream release
+
+  * debian/control: Set Standards-Version: to current version 
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Fri, 10 Jun 2011 17:27:10 -0500
+
+tclap (1.2.0-1) unstable; urgency=low
+
+  * New upstream release
+
+  * debian/control: Set Standards-Version: to current version 
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Thu, 04 Mar 2010 10:11:45 -0600
+
+tclap (1.1.0-2) unstable; urgency=low
+
+  * include/tclap/{MultiArg.h,ValueArg.h}: Add missing #include <cstdio> so 
+    that EOF is defined for g++ 4.4. Thanks to Martin Michlmayr for running
+    early g++ 4.4 regression tests.			  (Closes: #504854)
+  
+  * debian/control: Update Standards-Version: to current version
+  * debian/control: Changed Section: to libdevel
+  * debian/rules: Switched to debhelper (>= 7) one-line format
+  * debian/ru;es: Increased Build-Depends: on debhelper to (>= 7)
+  * debian/libtclap-dev.{examples,docs}: Added to support debhelper
+  * debian/compat: Changed debhelper compatibility level to 7
+  * debian/watch: Added watch file from dehs.alioth.debian.org
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Sat, 08 Nov 2008 09:09:57 -0600
+
+tclap (1.1.0-1) unstable; urgency=low
+
+  * Initial Debian upload 			(Closes: #399958)
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Fri,  1 Dec 2006 20:38:34 -0600
+

@@ -1,0 +1,19 @@
+Source: tclap
+Section: devel
+Priority: optional
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Standards-Version: 4.6.0
+Build-Depends: debhelper-compat (= 11)
+Vcs-Browser: https://salsa.debian.org/edd/tclap
+Vcs-Git: https://salsa.debian.org/edd/tclap.git
+Homepage: http://tclap.sourceforge.net/
+
+Package: libtclap-dev
+Section: libdevel
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: any
+Description:  Templatized command-line argument parser for C++
+ This package provides a simple C++ library that facilitates 
+ parsing command-line arguments in a type-independent manner.  
+ The functionality is provided via template header files, so 
+ no actual library is included.

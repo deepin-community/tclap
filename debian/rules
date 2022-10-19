@@ -1,0 +1,17 @@
+#!/usr/bin/make -f 					
+# 							-*- makefile -*-
+# debian/rules file for the Debian/GNU Linux tclap package
+
+%:
+	dh $@
+
+override_dh_installdocs:
+	dh_installdocs
+        # edd 10 Jun 2011 prune CVS directory
+	find debian/ -name CVS -type d | xargs rm -rf
+        # Remove example Makefiles for reproducible builds as they
+        # embed the build path, SHELL and various paths to utilities
+	find debian/ -name Makefile -type f | xargs rm -f
+
+override_dh_auto_test:
+	echo "Skipping checks for now"
